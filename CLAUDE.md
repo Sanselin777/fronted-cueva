@@ -141,3 +141,27 @@ with zero errors before reporting a task as complete.
 
 Frequent, clear, conventional commit messages: `feat: challenge purchase form`,
 `fix: auth redirect loop`, `chore: add eslint rule`. DRY, YAGNI.
+
+## Skills, agents & commands
+
+Invoke these before starting any substantial task — never wait until after writing code.
+
+| When | Use |
+|---|---|
+| Starting a substantial feature (>~500 LOC / cross-cutting / ambiguous) | `spec-driven-implementation` skill — write PRODUCT.md/TECH.md first |
+| Before any creative/feature work — explore intent & design | `superpowers:brainstorming` skill |
+| Building, reviewing, or optimizing any React/Next.js UI | `react-nextjs-agent` agent |
+| Next.js App Router, RSC, Server Actions, or caching specifics | `next-best-practices` + `vercel-react-best-practices` skills |
+| Health-scan an existing React component for issues | `react-doctor` skill |
+| Adding or using shadcn/ui components | `shadcn` skill |
+| Tailwind tokens, design-system, or utility-class decisions | `tailwind-design-system` skill |
+| Visual/UX design quality, layout, accessibility | `frontend-design` / `ui-ux-pro-max` / `web-design-guidelines` skills |
+| Animation performance issues | `fixing-motion-performance` skill |
+| Writing or healing E2E browser tests | `playwright-cli` skill |
+| Advanced TypeScript (generics, conditional types, utility types) | `typescript-advanced-types` skill |
+| Domain/business logic that should be test-first | `superpowers:test-driven-development` skill |
+| Debugging a non-obvious bug | `superpowers:systematic-debugging` skill |
+| Reviewing the current diff for bugs | `/code-review` command |
+| Cleanup: reuse / simplify / efficiency on changed code | `/simplify` command |
+| Confirm a change works by running the app | `/verify` or `/run` command |
+| Need current library/framework docs (Next.js, React, TanStack Query, shadcn…) | `find-docs` skill or `ctx7 docs <library-id>` |
